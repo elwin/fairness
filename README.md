@@ -9,4 +9,4 @@ Is the routine selected randomly?
 
 **I doubt that.**
 
-If it is random it makes sense that with large number of data each routine will receive roughly equally many (according to the [law of large numbers](https://en.wikipedia.org/wiki/Law_of_large_numbers)). However, even if there are equally many routines as there is data to be sent each routine will receive data exactly one, which is unlikely (1 / `n!` if I'm not mistaken). Thus I think they are deterministically managed to be distributed as evenly as possibly. 
+If it is random it makes sense that with large number of data each routine will receive roughly equally many (according to the [law of large numbers](https://en.wikipedia.org/wiki/Law_of_large_numbers)). However, even if there are equally many routines as there is data to be sent each routine will receive data exactly one, which is unlikely (`1 / n!` if I'm not mistaken). Thus I think they are deterministically managed to be distributed as evenly as possibly. 
