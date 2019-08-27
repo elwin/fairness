@@ -13,7 +13,7 @@ const (
 	timeout   = 10 * time.Millisecond
 )
 
-// In this scenario we want to find out, if the channel operates using a FIFO channel,
+// In this scenario we want to find out if the channel operates using a FIFO channel,
 // that is if the first routine to listen on the channel will be the first one to receive.
 // For that we let all threads queue up after each iteration randomly (as opposed to stay in queue).
 // If the output is once again evenly distributed this suggests it is not a FIFO queue, instead having
