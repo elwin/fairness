@@ -26,7 +26,13 @@ func main() {
 	}
 
 	producer(channel)
-	fmt.Println(results)
+	for _, triggered := range results {
+		if triggered != retries / consumers {
+			fmt.Printf("Not evenly distributed: %v", results)
+			return
+		}
+	}
+	fmt.Printf("Evenly distributed, each routine received %d data-elements", retries / consumers)
 }
 
 func producer(channel chan<- struct{}) {
